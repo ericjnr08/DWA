@@ -38,7 +38,7 @@ const getHTML = (dataAttr, value, target) => {
   return element;
 };
 
-const createBookPreview = ({ author, id, image, title }) => {
+ const createBookPreview = ({ author, id, image, title }) => {
   return {
     getAuthor() {
       return author;
