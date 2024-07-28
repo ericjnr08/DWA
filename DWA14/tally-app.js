@@ -74,10 +74,10 @@ class TallyApp extends LitElement {
   render() {
     return html`
       <div>
-        <p class="counter"></p>
+        <p class="status">Status: ${this.status}</p>
         <p>${this.count}</p>
-        <sl-badge variant="primary" size="large" @click=${this.adding}>+</sl-badge>
-        <sl-badge variant="primary" size="large" @click=${this.subtracting}>-</sl-badge>
+        <sl-button variant="primary" size="large" @click=${this.adding.bind(this)}>+</sl-button>
+        <sl-button variant="primary" size="large" @click=${this.subtracting.bind(this)}>-</sl-button>
       </div>
     `;
   }
